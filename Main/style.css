@@ -69,6 +69,8 @@ ul {
     margin: 10px auto;
 }
 
+
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -104,7 +106,13 @@ ul {
 
     .nav-list.active {
         left: 0;
-        top: 10.5vh;
+        top: 9.7vh;
         
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-list.active {
+        top: 11.8%;
     }
 }
