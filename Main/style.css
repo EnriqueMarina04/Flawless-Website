@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Pacifico&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+    color: black;
+    font-size: 1,2rem;
+    background-color: #cf74af;
+    border-bottom: 0.1px solid black;
+}
+
+.logo {
+    border: black 1px solid;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.logo h3 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Pacifico";
+    font-weight: 50;
+}
+.logo span {
+    font-size: 0.65em;
+    font-family: "Outfit";
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    font-size: 1.1rem;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 800;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
