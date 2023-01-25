@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Outfit:wght@400;700&family=Pacifico&family=Roboto:wght@300&family=Unbounded:wght@300&display=swap');
 :root {
     --mint-color: #9ecec3;
+    --box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
 }
 
 * {
@@ -9,6 +10,9 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 250vh;
+}
 
 .main-nav {
     display: flex;
@@ -123,22 +127,101 @@ div.banner {
     text-align: center;
     font-family: "Outfit";
 }
-.services-grid {
+.services-flex {
     background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     
 }
 .our-services-main {
-    font-size: 3.2rem;
+    font-size: 3rem;
     text-align: center;
     padding: 1em;
     font-family: "Unbounded";
     font-weight: 100;
 }
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    width: min(80%,30rem);
+    border: 1px solid black;
+    background-color: var(--mint-color);
+    border-radius: 0.1rem;
+    box-shadow: var(--box-shadow);
+    
+}
+
 .services-content h4 {
-    color: blue;
-    font-size: 1rem;
+    color: black;
+    font-size: 2.3rem;
+    text-align: center;
+    display: inline-block;
+    font-family: "Outfit";
+}
+.services-content img {
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid black;
+}
+.services-content a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    background-color: black;
+    padding: 0.3em;
+    border-radius: 0.3rem;
+    font-family:"Outfit";
+}
+
+
+.customer-reviews h2 {
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: 100;
+    font-family: "Unbounded";
     text-align: center;
 }
+
+.card {
+    border: black 1px solid;
+    padding: 1em;
+    margin: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+
+.card p {
+    padding-top: 0.5rem;
+}
+
+.flex-reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.reviews-grid {
+    width: min(80%, 80rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.c-one {
+    grid-column: span 2;
+}
+
 
 @media (max-width: 850px) {
     .hamburger {
@@ -194,7 +277,6 @@ div.banner {
         font-size: 3rem;
     }
 
-
 }
 
 
@@ -220,4 +302,6 @@ div.banner {
     .our-services-main {
         font-size: 2.2rem;
     }
+
+
 }
