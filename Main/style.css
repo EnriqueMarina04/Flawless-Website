@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Outfit:wght@400;700&family=Pacifico&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Outfit:wght@400;700&family=Pacifico&family=Roboto:wght@300&family=Unbounded:wght@300&display=swap');
+:root {
+    --mint-color: #9ecec3;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .main-nav {
     display: flex;
@@ -41,8 +45,8 @@
     gap: 2.5rem;
     font-size: 1.1rem;
     align-items: center;
-    font-family: "Roboto";
-    font-weight: 800;
+    font-family: "Outfit";
+    font-weight: 600;
     flex-wrap: wrap;
 }
 
@@ -55,6 +59,7 @@ ul {
     color: black;
     border-bottom: 1px solid black;
     padding: 0.3em;
+    font-family: "Outfit";
 }
 
 
@@ -91,7 +96,7 @@ ul {
     gap: 4rem;
 }
 .wax-main h1 {
-    margin-top: 3rem;
+    margin-top: 9rem;
     font-size: 4rem;
     font-family: "Dancing Script";
     font-weight: 50;
@@ -106,9 +111,34 @@ a.book-btn {
     border-radius: 0.2rem;
     padding: 0.3rem;
     border: 1px solid black;
+    font-family: "Outfit";
 }
 
-
+div.banner {
+    font-size: 1.3rem;
+    background-color: var(--mint-color);
+    padding: 1em;
+    font-weight: bold;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "Outfit";
+}
+.services-grid {
+    background-color: whitesmoke;
+    
+}
+.our-services-main {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 1em;
+    font-family: "Unbounded";
+    font-weight: 100;
+}
+.services-content h4 {
+    color: blue;
+    font-size: 1rem;
+    text-align: center;
+}
 
 @media (max-width: 850px) {
     .hamburger {
@@ -156,6 +186,14 @@ a.book-btn {
         font-size: 4rem;
     }
 
+    div.banner {
+        font-size: 1.1rem;
+    }
+
+    .our-services-main {
+        font-size: 3rem;
+    }
+
 
 }
 
@@ -173,5 +211,13 @@ a.book-btn {
     .wax-main h1 {
         font-size: 2.6rem;
         font-weight: 600;
+    }
+
+    div.banner {
+        font-size: 0.9rem;
+    }
+
+    .our-services-main {
+        font-size: 2.2rem;
     }
 }
