@@ -41,6 +41,7 @@ body {
     font-size: 0.65em;
     font-family: "Outfit";
     text-transform: uppercase;
+    text-align: center;
 }
 
 .nav-list {
@@ -288,10 +289,55 @@ div.banner {
     text-decoration: none;
     color: whitesmoke;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     font-size: 1.3rem;
     font-family: "Outfit";
 }
+
+.footer {
+    margin-top: 7rem;
+    background-color: black;
+    padding: 1em;
+}
+
+.footer h5 {
+    text-align: center;
+    color: white;
+    padding: 0.3rem;
+    font-family: "Outfit";
+}
+
+div.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 80%;
+    margin: 3rem auto;
+    
+}
+.span-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.main-footer h6 {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.smaller-h5 {
+    font-size: 1.5rem;
+}
+
+.larger-h5 {
+    font-size: 3.2rem;
+}
+
 
 
 @media (max-width: 850px) {
@@ -360,6 +406,19 @@ div.banner {
         align-items: center;
     }
 
+    div.main-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        font-family: 0.8rem;
+    }
+    .main-footer h6 {
+        font-size: 1.7rem;
+    }
+
+    .larger-h5 {
+        margin-top: 2rem;
+    }
+
 
 }
 
@@ -413,5 +472,21 @@ div.banner {
 
     .ac-info h3 {
         font-size: 1.7rem;
+    }
+
+    div.main-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        font-family: 0.8rem;
+    }
+    .main-footer h6 {
+        font-size: 1.3rem;
+    }
+    .larger-h5 {
+        font-size: 2.2rem;
+        margin-top: 3rem;
+    }
+    .smaller-h5 {
+        font-size: 1.1rem;
     }
 }
