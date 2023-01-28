@@ -11,9 +11,6 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 370vh;
-}
 
 .main-nav {
     display: flex;
@@ -26,7 +23,7 @@ body {
 }
 
 .logo {
-    border: black 1px solid;
+    border: gray 1.5px solid;
     padding: 0.4rem;
     font-size: 0.8rem;
     background-color: whitesmoke;
@@ -51,7 +48,6 @@ body {
     gap: 2.5rem;
     font-size: 1.1rem;
     align-items: center;
-    font-family: "Outfit";
     font-weight: 600;
     flex-wrap: wrap;
 }
@@ -65,7 +61,7 @@ ul {
     color: white;
     border-bottom: 1px solid white;
     padding: 0.3em;
-    font-family: "Outfit";
+    font-family:var(--quick-font);
 }
 
 
@@ -117,7 +113,8 @@ a.book-btn {
     border-radius: 0.2rem;
     padding: 0.3rem;
     border: 1px solid black;
-    font-family: "Outfit";
+    font-family: var(--quick-font);
+    font-weight: bold;
 }
 
 div.banner {
@@ -201,7 +198,7 @@ div.banner {
 }
 
 .card {
-    border: black 1px solid;
+    border: black 3px solid;
     padding: 1em;
     margin: 0.5rem;
     box-shadow: var(--box-shadow);
@@ -286,7 +283,7 @@ div.banner {
 }
 
 .ac-info h3{
-    font-family: "Outfit";
+    font-family:var(--quick-font);
     font-size: 3rem;
 }
 
@@ -302,7 +299,13 @@ div.banner {
     padding: 0.5rem;
     border-radius: 0.3rem;
     font-size: 1.3rem;
-    font-family: "Outfit";
+    color: var(--mint-color);
+    font-weight: bold;
+    font-family: var(--quick-font);
+}
+
+.ac-info p {
+    font-family: var(--quick-font);
 }
 
 .footer {
@@ -350,9 +353,65 @@ div.main-footer {
     font-size: 3.2rem;
 }
 
+/*About Us Page
+ */
+.ac-btn-2 {
+    background-color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--mint-color);
+    font-family: var(--quick-font);
+}
+.about-main {
+    width:min(100%,85rem);
+    display: flex;
+    margin: 5rem auto;
+    align-items: center;
+    color: var(--mint-color);
+    padding: 2rem;
+    font-family: var(--quick-font);
+    font-weight: bold;
+    gap: 6rem;
+    text-align: center;
+
+}
+.flex-col-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.profile-2 {
+    background-color: var(--mint-color);
+    color: whitesmoke;
+    padding: 4rem;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.profile-pic {
+    border: black solid 10px;
+    width: min(99%,20rem);
+    height: 320px;
+    border-radius: 200px;
+    
+}
+
+.about-main > img {
+    border: solid 10px orange;
+    width: 50%;
+    height: 500px;
+}
 
 
-@media (max-width: 850px) {
+
+
+@media (max-width: 865px) {
     .hamburger {
         display: block;
     }
@@ -378,6 +437,11 @@ div.main-footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
+    }
+
+    .nav-list a {
+        color: black;
+        border-bottom: 1px solid black;
     }
 
     .nav-item {
@@ -490,6 +554,9 @@ div.main-footer {
     .ac-info h3 {
         font-size: 1.7rem;
     }
+    .ac-info p {
+        text-align: center;
+    }
 
     div.main-footer {
         flex-direction: column;
@@ -505,5 +572,16 @@ div.main-footer {
     }
     .smaller-h5 {
         font-size: 1.1rem;
+    }
+
+    .about-main {
+        flex-direction: column;
+    }
+    .flex-col-profile {
+    
+    }
+
+    .profile-2 {
+        font-size: 1rem;
     }
 }
