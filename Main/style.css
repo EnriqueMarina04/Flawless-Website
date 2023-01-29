@@ -18,15 +18,16 @@
     padding: 1.2rem;
     color: black;
     font-size: 1,2rem;
-    background-color: var(--mint-color);
+    background-color:var(--mint-color);
     border-bottom: 0.1px solid black;
 }
 
 .logo {
-    border: gray 1.5px solid;
-    padding: 0.4rem;
+    padding: 0.3rem;
     font-size: 0.8rem;
-    background-color: whitesmoke;
+    background-color: white;
+
+    
 }
 
 .logo h3 {
