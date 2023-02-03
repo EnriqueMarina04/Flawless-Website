@@ -493,12 +493,42 @@ textarea {
 .google-map {
     width: 100%;
 }
-
+.our-wax h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Unbounded";
+    margin-top: 2rem;
+}
+.main-wax {
+    /* border: solid red 2px; */
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 1rem;
+}
+.main-wax img {
+    width: min(90%,25rem);
+    /* border: red solid 1px; */
+    align-self: center;
+}
+.main-wax p{
+    width: min(100%,40rem);
+    align-self: center;
+    padding: 3rem;
+    font-size: 1.4rem;
+    font-family: var(--quick-font);
+    font-weight: bold;
+    text-align: center;
+}
 
 
 
 @media (max-width:1250px) {
     .about-main {
+        flex-direction: column;
+    }
+    .main-wax {
         flex-direction: column;
     }
 }
@@ -691,5 +721,15 @@ textarea {
 
     .contact-h1 {
         font-size: 1.6rem;
+    }
+    .main-wax {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-wax p {
+        font-size: 1rem;
+    }
+    .our-wax h1 {
+        font-size: 2.2rem;
     }
 }
