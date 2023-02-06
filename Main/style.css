@@ -512,11 +512,12 @@ textarea {
     width: min(100%,40rem);
     /* border: red solid 1px; */
     align-self: center;
+    height: 480px;
 }
 .main-wax p{
     width: min(100%,40rem);
     align-self: center;
-    padding: 1.4rem;
+    padding: 2.4rem;
     font-size: 1.4rem;
     font-family: var(--quick-font);
     font-weight: bold;
